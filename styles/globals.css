@@ -78,6 +78,43 @@ details summary { cursor: pointer; }
   border-bottom: 4px solid transparent;
 }
 
+/* Case study results banner */
+.cs-results-banner {
+  display: grid;
+  gap: 0;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+.cs-result-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+.cs-result-item:last-child { border-right: none; }
+.cs-big-number {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  font-family: var(--font-display);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+.cs-big-label {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--clr-text-2);
+  margin-bottom: 0.2rem;
+}
+.cs-big-sub {
+  font-size: 0.75rem;
+  color: var(--clr-text-3);
+}
+
 /* Base grid column definitions (no inline style needed) */
 .hp-services-grid { grid-template-columns: repeat(3,1fr); }
 .blog-cards-grid  { grid-template-columns: repeat(3,1fr); }
@@ -132,6 +169,11 @@ details summary { cursor: pointer; }
   }
   .cs-featured-card { grid-template-columns: 1fr !important; }
   .cs-featured-card > div:first-child { min-height: 220px !important; }
+
+  /* Case study results: 2×2 on mobile */
+  .cs-results-banner { grid-template-columns: repeat(2,1fr) !important; }
+  .cs-result-item { border-right: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .cs-result-item:nth-child(2n) { border-right: none; }
 
   /* Section padding */
   .section { padding: 3rem 0 !important; }
