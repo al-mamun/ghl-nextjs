@@ -4,9 +4,9 @@ export default function Footer() {
   return (
     <footer style={{ background: 'var(--clr-bg)', borderTop: '1px solid var(--clr-border)', padding: '4rem 0 2rem' }}>
       <div className="container">
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '4rem', marginBottom: '3rem' }}>
+        <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '4rem', marginBottom: '3rem' }}>
           {/* Brand */}
-          <div style={{ maxWidth: '320px' }}>
+          <div className="footer-brand" style={{ maxWidth: '320px' }}>
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem', textDecoration: 'none' }}>
               <span style={{ filter: 'drop-shadow(0 0 8px rgba(99,102,241,0.4))', display: 'flex' }}>
                 <svg width="36" height="36" viewBox="0 0 32 32" fill="none">
@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
 
           {/* Nav Columns */}
-          <nav style={{ display: 'flex', gap: '3rem' }}>
+          <nav className="footer-nav" style={{ display: 'flex', gap: '3rem' }}>
             <FooterCol title="Services" links={[
               { href: '/#services', label: 'Funnel Design' },
               { href: '/#services', label: 'CRM Setup' },

@@ -102,6 +102,15 @@ details summary { cursor: pointer; }
   .hp-cta-trust { flex-direction: column; align-items: center; }
   .hp-hero-ctas { flex-direction: column; }
   .hp-hero-ctas .btn { width: 100% !important; justify-content: center !important; }
+
+  /* Footer mobile */
+  .footer-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+  .footer-nav { flex-wrap: wrap !important; gap: 2rem !important; }
+  .footer-brand { max-width: 100% !important; }
+
+  /* Section padding */
+  .section { padding: 3rem 0 !important; }
+  .container { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
 }
 
 /* Skip link — hidden until focused via keyboard */
