@@ -3,11 +3,42 @@ import Link from 'next/link'
 import ContactForm from '@/components/ContactForm'
 import HeroDashboard from '@/components/HeroDashboard'
 import ProcessSteps from '@/components/ProcessSteps'
+import { SITE_URL } from '@/lib/config'
+import JsonLd from '@/components/JsonLd'
 
 export const metadata: Metadata = {
   title: 'GHL Service Provider | GoHighLevel Expert — Funnels, CRM & Automation',
   description: 'Expert GoHighLevel service provider for complete GHL setup — funnels, CRM, AI chatbots, workflows & full automation. Demo first, pay after satisfaction.',
-  alternates: { canonical: 'https://ghlserviceprovider.com/' },
+  alternates: { canonical: `${SITE_URL}/` },
+}
+
+const orgJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'GHL Service Provider',
+  url: SITE_URL,
+  logo: `${SITE_URL}/assets/images/og-image.jpg`,
+  description: 'Expert GoHighLevel service provider for complete GHL setup — funnels, CRM, AI chatbots, workflows & full automation.',
+  areaServed: 'Worldwide',
+  serviceType: 'GoHighLevel Setup & Automation',
+  sameAs: [
+    'https://wa.me/8801718020102',
+    'https://m.me/GHLServiceProvider',
+  ],
+}
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: 'What is GoHighLevel?', acceptedAnswer: { '@type': 'Answer', text: 'GoHighLevel (GHL) is an all-in-one marketing and CRM platform built for agencies and businesses. It includes funnels, websites, CRM, pipelines, email/SMS automation, AI chatbots, calendars, reputation management, and much more.' } },
+    { '@type': 'Question', name: 'Can you set up my full GHL account?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. I provide complete GoHighLevel account setup including sub-account configuration, custom domain, SMTP, phone numbers, CRM, pipelines, workflows, and all integrations tailored to your business.' } },
+    { '@type': 'Question', name: 'Can you build funnels and landing pages?', acceptedAnswer: { '@type': 'Answer', text: 'Absolutely. I design and build high-converting funnels and landing pages inside GoHighLevel using custom code, strategic layouts, and conversion-optimized copy frameworks.' } },
+    { '@type': 'Question', name: 'Can you set up AI chatbots?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. I build AI-powered chatbots inside GoHighLevel that qualify leads, answer FAQs, book appointments, and route conversations — all automatically, 24/7.' } },
+    { '@type': 'Question', name: 'Can you create AI voice agents?', acceptedAnswer: { '@type': 'Answer', text: "Yes. I set up AI voice agents that handle inbound and outbound calls, qualify prospects, and book appointments automatically using GoHighLevel's AI voice capabilities." } },
+    { '@type': 'Question', name: 'Can you fix existing GHL workflows?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. I audit, debug, and optimize existing GoHighLevel workflows, automations, and pipelines to ensure they perform reliably and efficiently.' } },
+    { '@type': 'Question', name: 'Do you offer monthly support?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. I offer flexible monthly support retainers for ongoing GHL management, optimization, new automation builds, and technical troubleshooting.' } },
+  ],
 }
 
 const Logo = () => (
@@ -23,6 +54,10 @@ const Logo = () => (
 export default function HomePage() {
   return (
     <>
+      {/* ── Structured Data ── */}
+      <JsonLd data={orgJsonLd} />
+      <JsonLd data={faqJsonLd} />
+
       {/* ── HERO ── */}
       <section style={{ minHeight: 'calc(100vh - 72px)', display: 'flex', flexDirection: 'column', position: 'relative', overflow: 'hidden', padding: '8rem 0 4rem', background: 'var(--clr-bg)' }} id="home">
         {/* Background */}
@@ -327,6 +362,35 @@ export default function HomePage() {
             {/* Contact methods */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem', marginBottom: '2rem' }}>
               <a href="https://wa.me/8801718020102" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.875rem', padding: '1rem 1.25rem', background: 'var(--clr-surface)', border: '1px solid var(--clr-border)', borderRadius: 'var(--radius-md)', fontSize: '0.9375rem', fontWeight: 600, color: '#25d366', transition: 'all 0.25s', textDecoration: 'none' }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.549 4.107 1.512 5.84L.057 23.943l6.265-1.44A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm6.12 16.4c-.26.73-1.519 1.386-2.087 1.449-.568.063-1.099.252-3.697-.76-3.096-1.215-5.1-4.39-5.254-4.594-.155-.204-1.262-1.677-1.262-3.198 0-1.52.8-2.264 1.083-2.574.283-.31.615-.388.82-.388.205 0 .41.002.59.01.19.01.443-.072.693.53.256.618.869 2.13.946 2.286.077.155.128.337.026.541-.103.204-.154.333-.308.513-.154.18-.324.403-.463.541-.154.154-.314.32-.135.63.18.31.797 1.313 1.71 2.127 1.175 1.048 2.167 1.374 2.478 1.528.31.154.493.129.674-.077.18-.206.77-.9 1.977-1.803z"/></svg>
+                Chat on WhatsApp
+              </a>
+              <a href="mailto:hello@ghlserviceprovider.com" style={{ display: 'flex', alignItems: 'center', gap: '0.875rem', padding: '1rem 1.25rem', background: 'var(--clr-surface)', border: '1px solid var(--clr-border)', borderRadius: 'var(--radius-md)', fontSize: '0.9375rem', fontWeight: 600, color: 'var(--clr-primary)', transition: 'all 0.25s', textDecoration: 'none' }}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                hello@ghlserviceprovider.com
+              </a>
+            </div>
+
+            {/* Calendar embed placeholder */}
+            <div style={{ background: 'var(--clr-surface)', border: '1px dashed var(--clr-border-2)', borderRadius: 'var(--radius-lg)', padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '0.75rem' }}>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ color: 'var(--clr-primary)' }}><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <strong style={{ fontSize: '1rem', fontWeight: 700 }}>Book a Free 30-Min Consultation</strong>
+              <p style={{ fontSize: '0.875rem', color: 'var(--clr-text-2)' }}>Select a time that works for you →</p>
+              <Link href="#contact" className="btn btn-primary" style={{ marginTop: '0.25rem' }}>Open Calendar →</Link>
+            </div>
+          </div>
+
+          {/* Right: Form */}
+          <div data-animate="fade-left"><ContactForm /></div>
+        </div>
+      </section>
+
+      {/* Floating buttons handled globally by WhatsAppFloat in layout.tsx */}
+
+    </>
+  )
+}
+: '#25d366', transition: 'all 0.25s', textDecoration: 'none' }}>
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.549 4.107 1.512 5.84L.057 23.943l6.265-1.44A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm6.12 16.4c-.26.73-1.519 1.386-2.087 1.449-.568.063-1.099.252-3.697-.76-3.096-1.215-5.1-4.39-5.254-4.594-.155-.204-1.262-1.677-1.262-3.198 0-1.52.8-2.264 1.083-2.574.283-.31.615-.388.82-.388.205 0 .41.002.59.01.19.01.443-.072.693.53.256.618.869 2.13.946 2.286.077.155.128.337.026.541-.103.204-.154.333-.308.513-.154.18-.324.403-.463.541-.154.154-.314.32-.135.63.18.31.797 1.313 1.71 2.127 1.175 1.048 2.167 1.374 2.478 1.528.31.154.493.129.674-.077.18-.206.77-.9 1.977-1.803z"/></svg>
                 Chat on WhatsApp
               </a>

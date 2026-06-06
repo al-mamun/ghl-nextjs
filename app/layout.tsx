@@ -5,6 +5,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ScrollAnimations from '@/components/ScrollAnimations'
 import WhatsAppFloat from '@/components/WhatsAppFloat'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -23,11 +24,11 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://ghlserviceprovider.com'),
   title: {
-    default: 'GHL Service Provider | GoHighLevel Expert — Funnels, CRM & Automation',
+    default: 'GHL Service Provider | GoHighLevel Expert',
     template: '%s | GHL Service Provider',
   },
-  description: 'Expert GoHighLevel service provider for complete GHL setup — funnels, CRM, AI chatbots, workflows & full automation. Demo first, pay after satisfaction.',
-  keywords: ['GoHighLevel expert', 'GHL service provider', 'GHL setup', 'GoHighLevel automation', 'GHL CRM setup', 'AI chatbot setup'],
+  description: 'Expert GoHighLevel service provider for funnels, CRM, AI chatbots, workflows & automation.',
+  keywords: ['GoHighLevel expert', 'GHL service provider', 'GHL setup', 'GoHighLevel automation'],
   authors: [{ name: 'GHL Service Provider', url: 'https://ghlserviceprovider.com' }],
   openGraph: {
     type: 'website',
@@ -36,12 +37,17 @@ export const metadata: Metadata = {
     images: [{ url: '/assets/images/og-image.jpg', width: 1200, height: 630, alt: 'GHL Service Provider' }],
   },
   twitter: { card: 'summary_large_image' },
-  robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large' } },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
+  },
+  verification: { google: '4beed2728d3984f4' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
+    <html lang="en" className={inter.variable + ' ' + spaceGrotesk.variable}>
       <body>
         <a href="#main-content" className="skip-link">Skip to main content</a>
         <Header />
@@ -49,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <ScrollAnimations />
         <WhatsAppFloat />
+        <GoogleAnalytics />
       </body>
     </html>
   )
