@@ -108,3 +108,4 @@ nextjs-app/
 ├── next.config.js
 └── next-sitemap.config.js
 ```
+# ghl-nextjs
