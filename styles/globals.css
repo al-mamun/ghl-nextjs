@@ -108,6 +108,13 @@ details summary { cursor: pointer; }
   .footer-nav { flex-wrap: wrap !important; gap: 2rem !important; }
   .footer-brand { max-width: 100% !important; }
 
+  /* Blog / Case studies grids */
+  .blog-cards-grid { grid-template-columns: 1fr !important; }
+  .cs-cards-grid { grid-template-columns: 1fr !important; }
+  .featured-card { grid-template-columns: 1fr !important; min-height: auto !important; }
+  .featured-card-image { width: 100% !important; height: 240px !important; }
+  .cs-featured-card { grid-template-columns: 1fr !important; }
+
   /* Section padding */
   .section { padding: 3rem 0 !important; }
   .container { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }

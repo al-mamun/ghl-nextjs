@@ -75,7 +75,7 @@ export default async function CaseStudiesPage() {
       {featured && (
         <section style={{ padding: '4rem 0 0', background: 'var(--clr-bg)' }}>
           <div className="container">
-            <Link href={`/case-studies/${featured.slug.current}`} className="card-hover-glow" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', border: '1px solid var(--clr-border)', borderRadius: 'var(--radius-xl)', overflow: 'hidden', background: 'var(--clr-surface)', textDecoration: 'none', marginBottom: '2rem' }}>
+            <Link href={`/case-studies/${featured.slug.current}`} className="card-hover-glow cs-featured-card" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', border: '1px solid var(--clr-border)', borderRadius: 'var(--radius-xl)', overflow: 'hidden', background: 'var(--clr-surface)', textDecoration: 'none', marginBottom: '2rem' }}>
               {/* Thumbnail */}
               <div style={{ position: 'relative', background: '#060812', minHeight: '420px', overflow: 'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -122,7 +122,7 @@ export default async function CaseStudiesPage() {
       {rest.length > 0 && (
         <section style={{ padding: '2rem 0 5rem', background: 'var(--clr-bg)' }}>
           <div className="container">
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.5rem' }}>
+            <div className="cs-cards-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.5rem' }}>
               {rest.map((cs) => (
                 <Link key={cs._id} href={`/case-studies/${cs.slug.current}`} className="card-hover" style={{ background: 'var(--clr-surface)', border: '1px solid var(--clr-border)', borderRadius: 'var(--radius-xl)', overflow: 'hidden', textDecoration: 'none', display: 'flex', flexDirection: 'column' }}>
                   <div style={{ height: '200px', position: 'relative', overflow: 'hidden', background: INDUSTRY_GRADIENTS[cs.industry] || 'linear-gradient(135deg,#1a1033,#2d1b69,#6366f1)' }}>
