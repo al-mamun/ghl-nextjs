@@ -187,7 +187,7 @@ export default async function BlogPage({ searchParams }: { searchParams: { page?
       {featured && (
         <section style={{ padding: '3rem 0 0', background: 'var(--clr-bg)' }}>
           <div className="container">
-            <Link href={`/blog/${featured.slug.current}`} className="card-hover-glow featured-card" style={{ display: 'grid', gridTemplateColumns: '460px 1fr', border: '1px solid var(--clr-border)', borderRadius: 'var(--radius-xl)', overflow: 'hidden', background: 'var(--clr-surface)', textDecoration: 'none', minHeight: '460px' }}>
+            <Link href={`/blog/${featured.slug.current}`} className="card-hover-glow featured-card" style={{ display: 'grid', border: '1px solid var(--clr-border)', borderRadius: 'var(--radius-xl)', overflow: 'hidden', background: 'var(--clr-surface)', textDecoration: 'none', minHeight: '460px' }}>
               <div className="featured-card-image" style={{ position: 'relative', width: '460px', height: '460px', flexShrink: 0, overflow: 'hidden' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={getPhotoUrl(featured.category || 'Automation', featured.slug.current, true)} alt={featured.title} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', position: 'absolute', inset: 0 }} />
@@ -222,7 +222,7 @@ export default async function BlogPage({ searchParams }: { searchParams: { page?
             </div>
           )}
 
-          <div className="blog-cards-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.5rem' }}>
+          <div className="blog-cards-grid" style={{ display: 'grid', gap: '1.5rem' }}>
             {gridPosts.map((post: Post, i: number) => (
               <Link key={post._id} href={`/blog/${post.slug.current}`} className="card-hover" style={{ background: 'var(--clr-surface)', border: '1px solid var(--clr-border)', borderRadius: 'var(--radius-xl)', overflow: 'hidden', display: 'flex', flexDirection: 'column', textDecoration: 'none' }}>
                 <div style={{ position: 'relative', aspectRatio: '16/9', overflow: 'hidden', background: POST_GRADIENTS[i % POST_GRADIENTS.length] }}>

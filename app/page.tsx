@@ -149,7 +149,7 @@ export default function HomePage() {
             <h2 className="section-title">Complete GoHighLevel <span style={{ background: 'var(--grad-accent)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Services Menu</span></h2>
             <p className="section-subtitle">Every service you need to turn GoHighLevel into a full revenue-generating machine.</p>
           </div>
-          <div className="hp-services-grid" data-animate="fade-up" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.25rem', marginBottom: '3rem' }}>
+          <div className="hp-services-grid" data-animate="fade-up" style={{ display: 'grid', gap: '1.25rem', marginBottom: '3rem' }}>
             {[
               { title:'GHL Funnel Design', desc:'High-converting multi-step funnels built to capture leads and close deals on autopilot.', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="22,3 2,3 10,12.46 10,19 14,21 14,12.46"/></svg> },
               { title:'Landing Page Development', desc:'Custom-coded, lightning-fast landing pages with strategic layouts and optimized copy.', icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg> },
