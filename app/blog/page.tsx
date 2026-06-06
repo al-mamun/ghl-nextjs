@@ -194,7 +194,7 @@ export default async function BlogPage({ searchParams }: { searchParams: { page?
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right,transparent 50%,rgba(6,8,18,0.55) 100%)' }}/>
                 <span style={{ position: 'absolute', top: '1.5rem', left: '1.5rem', background: 'var(--grad-primary)', color: '#fff', fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', padding: '0.35em 0.9em', borderRadius: 'var(--radius-full)', zIndex: 1 }}>⭐ Featured</span>
               </div>
-              <div style={{ padding: '3rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <div className="featured-card-content" style={{ padding: '3rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.8125rem', color: 'var(--clr-text-3)', marginBottom: '1rem' }}>
                   <span style={{ color: 'var(--clr-primary)', fontWeight: 600 }}>{featured.category}</span>
                   <span>·</span>
