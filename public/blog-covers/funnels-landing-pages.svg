@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#140a00"/><stop offset="100%" stop-color="#0a0500"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="400" cy="200" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25"/><stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#glow)"/>
+  <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="1" fill="#f59e0b" fill-opacity="0.06"/>
+  </pattern>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <!-- Browser mockup for landing page -->
+  <rect x="80" y="70" width="360" height="310" rx="12" fill="none" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.7"/>
+  <rect x="80" y="70" width="360" height="30" rx="12" fill="#f59e0b" fill-opacity="0.1"/>
+  <!-- URL bar -->
+  <rect x="130" y="79" width="260" height="14" rx="7" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="260" y="90" font-family="monospace" font-size="9" fill="#f59e0b" fill-opacity="0.7" text-anchor="middle">yoursite.com/offer</text>
+  <!-- Page content mockup -->
+  <rect x="100" y="118" width="320" height="40" rx="6" fill="#f59e0b" fill-opacity="0.08"/>
+  <rect x="120" y="128" width="200" height="10" rx="5" fill="#fbbf24" fill-opacity="0.5"/>
+  <rect x="120" y="144" width="160" height="7" rx="3" fill="#94a3b8" fill-opacity="0.3"/>
+  <rect x="100" y="168" width="320" height="5" rx="2" fill="#94a3b8" fill-opacity="0.2"/>
+  <rect x="100" y="179" width="280" height="5" rx="2" fill="#94a3b8" fill-opacity="0.2"/>
+  <rect x="100" y="190" width="300" height="5" rx="2" fill="#94a3b8" fill-opacity="0.2"/>
+  <!-- CTA button on page -->
+  <rect x="155" y="215" width="210" height="45" rx="22" fill="#f59e0b" fill-opacity="0.9"/>
+  <text x="260" y="244" font-family="system-ui" font-size="14" font-weight="800" fill="#000" text-anchor="middle">Book Free Demo →</text>
+  <!-- Trust badges on page -->
+  <rect x="110" y="275" width="90" height="20" rx="10" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="155" y="288" font-family="system-ui" font-size="9" fill="#fbbf24" text-anchor="middle">✓ No Risk</text>
+  <rect x="215" y="275" width="90" height="20" rx="10" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="260" y="288" font-family="system-ui" font-size="9" fill="#fbbf24" text-anchor="middle">✓ Demo First</text>
+  <rect x="320" y="275" width="90" height="20" rx="10" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="365" y="288" font-family="system-ui" font-size="9" fill="#fbbf24" text-anchor="middle">✓ 50% Off</text>
+  <!-- Conversion metrics right side -->
+  <rect x="490" y="100" width="250" height="80" rx="12" fill="#f59e0b" fill-opacity="0.08" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1.5"/>
+  <text x="615" y="128" font-family="system-ui" font-size="12" fill="#94a3b8" text-anchor="middle">Conversion Rate</text>
+  <text x="615" y="158" font-family="system-ui" font-size="36" font-weight="900" fill="#fbbf24" text-anchor="middle">34.7%</text>
+  <rect x="490" y="200" width="250" height="80" rx="12" fill="#f59e0b" fill-opacity="0.08" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1.5"/>
+  <text x="615" y="228" font-family="system-ui" font-size="12" fill="#94a3b8" text-anchor="middle">Leads This Month</text>
+  <text x="615" y="258" font-family="system-ui" font-size="36" font-weight="900" fill="#fbbf24" text-anchor="middle">284</text>
+  <!-- Arrow connecting page to metrics -->
+  <line x1="440" y1="240" x2="490" y2="240" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="4,3"/>
+  <polygon points="490,235 500,240 490,245" fill="#f59e0b" fill-opacity="0.5"/>
+  <rect x="0" y="0" width="800" height="4" fill="#f59e0b"/>
+  <rect x="30" y="30" width="200" height="32" rx="16" fill="#f59e0b" fill-opacity="0.12" stroke="#f59e0b" stroke-opacity="0.5" stroke-width="1.5"/>
+  <text x="48" y="51" font-family="system-ui" font-size="13" font-weight="700" fill="#fbbf24">FUNNELS &amp; LANDING PAGES</text>
+</svg>

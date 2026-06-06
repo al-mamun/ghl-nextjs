@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#001520"/><stop offset="100%" stop-color="#000a14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="400" cy="225" r="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.2"/><stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#glow)"/>
+  <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="1" fill="#06b6d4" fill-opacity="0.06"/>
+  </pattern>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <!-- Industry tiles grid -->
+  <rect x="80" y="90" width="145" height="110" rx="12" fill="#06b6d4" fill-opacity="0.1" stroke="#06b6d4" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="152" y="138" font-family="system-ui" font-size="28" text-anchor="middle">🏠</text>
+  <text x="152" y="162" font-family="system-ui" font-size="12" font-weight="700" fill="#38bdf8" text-anchor="middle">Real Estate</text>
+  <text x="152" y="180" font-family="system-ui" font-size="10" fill="#64748b" text-anchor="middle">Lead automation</text>
+  <rect x="245" y="90" width="145" height="110" rx="12" fill="#8b5cf6" fill-opacity="0.1" stroke="#8b5cf6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="317" y="138" font-family="system-ui" font-size="28" text-anchor="middle">🏋️</text>
+  <text x="317" y="162" font-family="system-ui" font-size="12" font-weight="700" fill="#a78bfa" text-anchor="middle">Fitness</text>
+  <text x="317" y="180" font-family="system-ui" font-size="10" fill="#64748b" text-anchor="middle">Trial booking</text>
+  <rect x="410" y="90" width="145" height="110" rx="12" fill="#10b981" fill-opacity="0.1" stroke="#10b981" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="482" y="138" font-family="system-ui" font-size="28" text-anchor="middle">🔧</text>
+  <text x="482" y="162" font-family="system-ui" font-size="12" font-weight="700" fill="#34d399" text-anchor="middle">Contractor</text>
+  <text x="482" y="180" font-family="system-ui" font-size="10" fill="#64748b" text-anchor="middle">Quote follow-up</text>
+  <rect x="575" y="90" width="145" height="110" rx="12" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="647" y="138" font-family="system-ui" font-size="28" text-anchor="middle">🧹</text>
+  <text x="647" y="162" font-family="system-ui" font-size="12" font-weight="700" fill="#fbbf24" text-anchor="middle">Cleaning</text>
+  <text x="647" y="180" font-family="system-ui" font-size="10" fill="#64748b" text-anchor="middle">Re-booking</text>
+  <!-- Row 2 -->
+  <rect x="80" y="220" width="145" height="110" rx="12" fill="#ef4444" fill-opacity="0.1" stroke="#ef4444" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="152" y="268" font-family="system-ui" font-size="28" text-anchor="middle">⚖️</text>
+  <text x="152" y="292" font-family="system-ui" font-size="12" font-weight="700" fill="#f87171" text-anchor="middle">Law Firms</text>
+  <text x="152" y="310" font-family="system-ui" font-size="10" fill="#64748b" text-anchor="middle">Client intake</text>
+  <rect x="245" y="220" width="145" height="110" rx="12" fill="#06b6d4" fill-opacity="0.1" stroke="#06b6d4" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="317" y="268" font-family="system-ui" font-size="28" text-anchor="middle">🎓</text>
+  <text x="317" y="292" font-family="system-ui" font-size="12" font-weight="700" fill="#38bdf8" text-anchor="middle">Coaching</text>
+  <text x="317" y="310" font-family="system-ui" font-size="10" fill="#64748b" text-anchor="middle">Discovery calls</text>
+  <rect x="410" y="220" width="145" height="110" rx="12" fill="#8b5cf6" fill-opacity="0.1" stroke="#8b5cf6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="482" y="268" font-family="system-ui" font-size="28" text-anchor="middle">🏥</text>
+  <text x="482" y="292" font-family="system-ui" font-size="12" font-weight="700" fill="#a78bfa" text-anchor="middle">Healthcare</text>
+  <text x="482" y="310" font-family="system-ui" font-size="10" fill="#64748b" text-anchor="middle">Patient mgmt</text>
+  <rect x="575" y="220" width="145" height="110" rx="12" fill="#10b981" fill-opacity="0.1" stroke="#10b981" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="647" y="268" font-family="system-ui" font-size="28" text-anchor="middle">🏢</text>
+  <text x="647" y="292" font-family="system-ui" font-size="12" font-weight="700" fill="#34d399" text-anchor="middle">Agency</text>
+  <text x="647" y="310" font-family="system-ui" font-size="10" fill="#64748b" text-anchor="middle">Client campaigns</text>
+  <rect x="0" y="0" width="800" height="4" fill="#06b6d4"/>
+  <rect x="30" y="30" width="140" height="32" rx="16" fill="#06b6d4" fill-opacity="0.12" stroke="#06b6d4" stroke-opacity="0.5" stroke-width="1.5"/>
+  <text x="48" y="51" font-family="system-ui" font-size="13" font-weight="700" fill="#38bdf8">INDUSTRY GUIDES</text>
+</svg>

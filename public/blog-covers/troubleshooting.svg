@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1a0505"/>
+      <stop offset="100%" stop-color="#0d0000"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="400" cy="225" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <rect width="800" height="450" fill="url(#glow)"/>
+  <!-- Grid -->
+  <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0L0 0L0 40" fill="none" stroke="#ef4444" stroke-opacity="0.06" stroke-width="1"/>
+  </pattern>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <!-- Laptop outline -->
+  <rect x="240" y="110" width="320" height="200" rx="12" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-opacity="0.8"/>
+  <rect x="240" y="110" width="320" height="22" rx="12" fill="#ef4444" fill-opacity="0.15"/>
+  <!-- Traffic light dots -->
+  <circle cx="265" cy="121" r="5" fill="#ef4444" fill-opacity="0.9"/>
+  <circle cx="283" cy="121" r="5" fill="#f59e0b" fill-opacity="0.9"/>
+  <circle cx="301" cy="121" r="5" fill="#10b981" fill-opacity="0.4"/>
+  <!-- Screen content — error lines -->
+  <rect x="260" y="150" width="200" height="8" rx="4" fill="#ef4444" fill-opacity="0.7"/>
+  <rect x="260" y="168" width="160" height="6" rx="3" fill="#94a3b8" fill-opacity="0.3"/>
+  <rect x="260" y="184" width="180" height="6" rx="3" fill="#94a3b8" fill-opacity="0.3"/>
+  <!-- Warning box -->
+  <rect x="260" y="202" width="260" height="60" rx="8" fill="#ef4444" fill-opacity="0.12" stroke="#ef4444" stroke-opacity="0.5" stroke-width="1.5"/>
+  <text x="275" y="222" font-family="monospace" font-size="11" fill="#ef4444" fill-opacity="0.9">⚠ ERROR: Failed to execute</text>
+  <text x="275" y="238" font-family="monospace" font-size="11" fill="#ef4444" fill-opacity="0.7">workflow trigger</text>
+  <text x="275" y="254" font-family="monospace" font-size="10" fill="#64748b">Check configuration →</text>
+  <!-- Laptop base -->
+  <path d="M220 310 L580 310 L560 330 L240 330 Z" fill="none" stroke="#ef4444" stroke-width="2" stroke-opacity="0.6"/>
+  <rect x="340" y="310" width="120" height="6" rx="3" fill="#ef4444" fill-opacity="0.2"/>
+  <!-- Wrench icon right side -->
+  <g transform="translate(560, 180) rotate(45)">
+    <rect x="-8" y="-35" width="16" height="50" rx="4" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-opacity="0.7"/>
+    <rect x="-12" y="-38" width="24" height="12" rx="3" fill="none" stroke="#ef4444" stroke-width="2" stroke-opacity="0.7"/>
+    <rect x="-12" y="12" width="24" height="12" rx="3" fill="none" stroke="#ef4444" stroke-width="2" stroke-opacity="0.7"/>
+  </g>
+  <!-- Floating error badges -->
+  <rect x="150" y="140" width="70" height="28" rx="14" fill="#ef4444" fill-opacity="0.15" stroke="#ef4444" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="158" y="159" font-family="monospace" font-size="11" font-weight="bold" fill="#ef4444">500 ERR</text>
+  <rect x="588" y="260" width="60" height="28" rx="14" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="600" y="279" font-family="monospace" font-size="11" font-weight="bold" fill="#f59e0b">NULL</text>
+  <!-- Top accent -->
+  <rect x="0" y="0" width="800" height="4" fill="#ef4444"/>
+  <!-- Category label -->
+  <rect x="30" y="30" width="145" height="32" rx="16" fill="#ef4444" fill-opacity="0.15" stroke="#ef4444" stroke-opacity="0.5" stroke-width="1.5"/>
+  <text x="50" y="51" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#ef4444">TROUBLESHOOTING</text>
+</svg>
