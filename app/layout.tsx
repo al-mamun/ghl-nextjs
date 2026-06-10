@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import ScrollAnimations from '@/components/ScrollAnimations'
 import WhatsAppFloat from '@/components/WhatsAppFloat'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import { Analytics } from '@vercel/analytics/next'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -62,6 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ScrollAnimations />
         <WhatsAppFloat />
         <GoogleAnalytics />
+        <Analytics />
       </body>
     </html>
   )
